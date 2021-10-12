@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Filmy Quentina Tarantino</title>
+		<meta name="author" content="Michał Cellmer"/>
+		<meta name="description" content="Strona o filmach Quentina Tarantino, a także o samym reżyserze, który zasłużył już sobie na specjalne miejsce w historii kinematografii."/>
+		
+		<link href="style.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		
+	</head>
+	
+	<body>
+		
+		<header>
+			<h1 id="logo">Filmy <span style="color:#E10000">Quentina Tarantino</span></h1> <div id="theme"></div>
+			
+			<nav>
+				<ul>
+					<li id="n1" ><a href="index.html" >Strona główna</a></li><!--
+				 --><li id="n2">
+						<a href="filmografia.html" >Filmografia</a>
+						<ol>
+							<li>
+								<a href="galeria.html"> Galeria </a>
+							</li>
+						</ol>
+					</li><!--
+				 --><li id="n3"><a href="formularz.html" >Formularz</a></li><!--
+				 --><li id="n4"><a href="ranking.html" >Ranking</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article id="content">
+				<h2>Wypełnij formularz!</h2>
+				
+				<form action="action.php" method="get">
+				
+					<div class="row" style="float:right;">
+						<input type="reset" value="Zacznij od nowa" />
+						<div></div>
+					</div>
+					<div class="row">
+						<label for="name">Imie: </label>
+						<input type="text" id="name" name="name" />
+					</div>
+					<div class="row">
+						<label for="surname">Nazwisko: </label>
+						<input type="text" id="surname" name="surname" />
+					</div>
+					<div class="row">
+						<label for="age">Ile masz lat?: </label>
+						<input type="number" id="age" name="age" title="Minimum 18!" />
+					</div>
+					<div class="row">
+						<label for="male">Mężczyzna </label>
+						<input type="radio" id="male" name="gender" value="m" />
+					</div>
+					<div class="row">
+						<label for="female">Kobieta </label>
+						<input type="radio" id="female" name="gender" value="f" />
+					</div>
+					
+					<fieldset>
+						<legend>Które filmy oglądałeś?</legend>
+						
+						<div class="column">
+							<div class="row">
+								<input type="checkbox" id="f1" name="film[]" value="1" />
+								<label for="f1">Wściekłe psy</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="f2" name="film[]" value="2" />
+								<label for="f2">Pulp fiction</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="f3" name="film[]" value="3" />
+								<label for="f3">Jackie Brown</label>
+							</div>
+						</div>
+						
+						<div class="column">
+							<div class="row">
+								<input type="checkbox" id="f4" name="film[]" value="4" />
+								<label for="f4">Kill Bill I&amp;II</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="f5" name="film[]" value="5" />
+								<label for="f5">Grindhouse: Death proof</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="f6" name="film[]" value="6" />
+								<label for="f6">Bękarty wojny</label>
+							</div>
+						</div>
+						
+						<div class="column">
+							<div class="row">
+								<input type="checkbox" id="f7" name="film[]" value="7" />
+								<label for="f7">Django</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="f8" name="film[]" value="8" />
+								<label for="f8">Nienawistna ósemka</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="f9" name="film[]" value="9" />
+								<label for="f9">Pewnego razu w Hollywood</label>
+							</div>
+						</div>	
+						
+					</fieldset>
+					
+					<label for="fav">Wybierz swój ulubiony film: </label>
+					<select id="fav" name="fav">
+						<option value="1">Wściekłe psy</option>
+						<option value="2" selected>Pulp fiction</option>
+						<option value="3">Jackie Brown</option>
+						<option value="4">Kill Bill I&amp;II</option>
+						<option value="5">Grindhouse: Death proof</option>
+						<option value="6">Bękarty wojny</option>
+						<option value="7">Django</option>
+						<option value="8">Nienawistna ósemka</option>
+						<option value="9">Pewnego razu w Hollywood</option>
+					</select>
+					
+					<div class="row">
+						<input type="submit" value="Wyślij formularz" />
+					</div>
+				</form>
+					
+			</article>
+		</main>
+		<footer>Strona na projekt, autorstwa Michała Cellmera ;) </footer>
+		
+		<script src="skrypty.js"></script>
+	</body>
+	
+</html>

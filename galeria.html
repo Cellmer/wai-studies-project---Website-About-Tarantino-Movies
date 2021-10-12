@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Filmy Quentina Tarantino</title>
+		<meta name="author" content="Michał Cellmer"/>
+		<meta name="description" content="Strona o filmach Quentina Tarantino, a także o samym reżyserze, który zasłużył już sobie na specjalne miejsce w historii kinematografii."/>
+		
+		<link href="style.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+			<h1 id="logo">Filmy <span style="color:#E10000">Quentina Tarantino</span></h1> <div id = "theme"></div>
+			
+			<nav>
+				<ul>
+					<li id="n1" ><a href="index.html" >Strona główna</a></li><!--
+				 --><li id="n2">
+						<a href="filmografia.html" >Filmografia</a>
+						<ol>
+							<li>
+								<a href="galeria.html"> Galeria </a>
+							</li>
+						</ol>
+					</li><!--
+				 --><li id="n3"><a href="formularz.html" >Formularz</a></li><!--
+				 --><li id="n4"><a href="ranking.html" >Ranking</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article id="content">
+				<h2>Galeria plakatów</h2>
+				<div class="bphoto" onmouseover="count(1)"><img class="photo" src="img/1.jpg" alt="1"/></div>
+				<div class="bphoto" onmouseover="count(2)"><img class="photo" src="img/2.jpg" alt="2"/></div>
+				<div class="bphoto" onmouseover="count(3)"><img class="photo" src="img/3.jpg" alt="3"/></div>
+				<div class="bphoto" onmouseover="count(4)"><img class="photo" src="img/4.jpg" alt="4"/></div>
+				<div class="bphoto" onmouseover="count(5)"><img class="photo" src="img/5.jpg" alt="5"/></div>
+				<div class="bphoto" onmouseover="count(6)"><img class="photo" src="img/6.jpg" alt="6"/></div>
+				<div class="bphoto" onmouseover="count(7)"><img class="photo" src="img/7.jpg" alt="7"/></div>
+				<div class="bphoto" onmouseover="count(8)"><img class="photo" src="img/8.jpg" alt="8"/></div>
+				<div class="bphoto" onmouseover="count(9)"><img class="photo" src="img/9.jpg" alt="9"/></div>
+				
+				<div id="counter"></div>
+				
+			</article>
+		</main>
+		<footer>Strona na projekt, autorstwa Michała Cellmera ;) </footer>
+		
+		<script src="skrypty.js"></script>
+	</body>
+	
+</html>
